@@ -1,0 +1,44 @@
+@use "../variables/colors.scss" as *;
+@use "../variables/fonts.scss" as *;
+
+.headline-text {
+    position: relative;
+    font-weight: 600;
+    color:$text-pink;
+    width: 80%;
+    margin: 10px 0px;
+    font-size:$headline-text;
+    max-width: 800px;
+    width: fit-content;
+    font-family: sans-serif;
+    z-index: 1;
+  }
+  .headline-text::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    width: 100%;
+    height: 25px;
+    background-color: $text-underline;
+    box-shadow: 0 0 10px $text-underline-shadow;
+    z-index: -1;
+    border-radius: 4px;
+  }
+
+  .small-text {
+    color:$text-grey;
+    font-size: $small-text;
+    font-weight: 400;
+    position: relative;
+    line-height: 1.6;
+    font-family: sans-serif;
+  }
+  .small-text-pink {
+    color:$text-pink;
+    font-size: $small-text;
+    font-weight: 400;
+    position: relative;
+    line-height: 1.6;
+    font-family: sans-serif;
+  }

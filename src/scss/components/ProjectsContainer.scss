@@ -1,0 +1,37 @@
+@use "../variables/colors.scss" as *;
+@use "../variables/fonts.scss" as *;
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 4rem 2rem;
+  width: 100%;
+  max-width: 950px;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.project-card {
+  background-color: #ffe3e3;
+  height: 250px;
+  width: 450px;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  color: #e96269;
+  font-weight: 600;
+  text-align: center;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}

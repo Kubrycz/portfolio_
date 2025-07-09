@@ -35,7 +35,10 @@ function App() {
 
       <Section>
         <div className="projects-grid">
-          <div className="project-card">Project 1</div>
+          <div className="project-card">
+            <a href="https://shop-app-kubryczs-projects.vercel.app/"></a>Project
+            1
+          </div>
           <div className="project-card">Project 2</div>
           <div className="project-card">Project 3</div>
           <div className="project-card">Project 4</div>

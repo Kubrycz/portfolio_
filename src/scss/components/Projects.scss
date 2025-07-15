@@ -1,0 +1,48 @@
+@use "../variables/colors.scss" as *;
+@use "../variables/fonts.scss" as *;
+
+.image-container {
+  position: relative;
+  width: 26rem;
+  height: 14rem;
+  overflow: hidden;
+
+  .photo {
+    width: 26rem;
+    height: 14rem;
+    opacity: 0.3;
+    transition: opacity 0.4s ease;
+
+    mask-image: radial-gradient(
+      ellipse at center,
+      $text-pink 50%,
+      transparent 100%
+    );
+    mask-size: 100% 100%;
+    mask-repeat: no-repeat;
+  }
+
+  .project-name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $text-pink;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    z-index: 2;
+    pointer-events: none;
+  }
+
+  &:hover .photo {
+    filter: brightness(100%);
+    opacity: 1;
+  }
+
+  &:hover .project-name {
+    opacity: 0;
+  }
+}

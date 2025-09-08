@@ -1,3 +1,5 @@
 {
-  "rewrites": [{ "source": "/cv/:match*", "destination": "/cv/:match*" }]
+  "rewrites": [
+    { "source": "/PaulinaKuberska.pdf", "destination": "/PaulinaKuberska.pdf" }
+  ]
 }

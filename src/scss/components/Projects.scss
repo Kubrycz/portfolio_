@@ -5,21 +5,20 @@
   position: relative;
   width: 26rem;
   height: 14rem;
-  overflow: hidden;
 
   .photo {
     width: 26rem;
     height: 14rem;
-    opacity: 0.3;
+    opacity: 0.1;
     transition: opacity 0.4s ease;
 
-    mask-image: radial-gradient(
-      ellipse at center,
-      $text-pink 50%,
-      transparent 100%
-    );
-    mask-size: 100% 100%;
-    mask-repeat: no-repeat;
+    // mask-image: radial-gradient(
+    //   ellipse at center,
+    //   $text-pink 50%,
+    //   transparent 100%
+    // );
+    // mask-size: 100% 100%;
+    // mask-repeat: no-repeat;
   }
 
   .project-name {
@@ -28,7 +27,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: $text-pink;
-    font-size: 1.2rem;
+    font-size: 1.7rem;
     font-weight: bold;
     text-align: center;
     opacity: 1;
@@ -45,4 +44,51 @@
   &:hover .project-name {
     opacity: 0;
   }
+  .project-info {
+    position: absolute;
+    bottom: 100%; // nad projektem
+    left: 50%;
+    transform: translateX(-50%) translateY(-10px);
+    color: $text-pink;
+    padding: 0.8rem 1rem;
+    border-radius: 0.5rem;
+    width: 90%;
+    text-align: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 5;
+  }
+
+  &:hover .project-info {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-20px);
+    pointer-events: auto;
+  }
+  .project-info2 {
+    position: absolute;
+    top: 110%; // pod projektem
+    left: 50%;
+    transform: translateX(-50%) translateY(-10px);
+    color: $text-pink;
+    padding: 0.8rem 1rem;
+    border-radius: 0.5rem;
+    width: 90%;
+    text-align: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 5;
+  }
+
+  &:hover .project-info2 {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-20px);
+    pointer-events: auto;
+  }
+}
+.photo-cv {
+  position: relative;
+  width: 45%;
+  border-radius: 0.5rem;
 }

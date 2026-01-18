@@ -1,10 +1,7 @@
 import Section from "./components/Section";
 import avatar from "../src/assets/AvatarMaker.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faBars,
-  faChevronDown,
-} from "@fortawesome/free-solid-svg-icons";
+import { faBars, faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import "./scss/General.scss";
 import "./scss/components/Projects.scss";
 import ScrollToSection from "./components/ScrollSection";
@@ -17,7 +14,7 @@ function App() {
   return (
     <div className="background">
       <div className="header">
-     <a href={`${process.env.PUBLIC_URL}/PaulinaKuberska.pdf`} download>
+        <a href={`${process.env.PUBLIC_URL}/PaulinaKuberska.pdf`} download>
           <button className="menu-button" aria-label="CV">
             <FontAwesomeIcon className="menu-icon" icon={faBars} size="lg" />
             <span className="menu-text">CV</span>

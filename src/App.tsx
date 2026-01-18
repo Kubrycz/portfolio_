@@ -143,7 +143,7 @@ function App() {
               my projects will inspire you! 💻✨
             </p>
           </div>
-          <img className="photo-cv" src={photo} alt="face picture" />
+          <img className="photo-cv" src={photo} alt="face portrait" />
         </div>
       </Section>
     </div>

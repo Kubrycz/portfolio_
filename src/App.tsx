@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="background">
       <div className="header">
-        <a href={`${process.env.PUBLIC_URL}/PaulinaKuberska.pdf`} download>
+        <a href={`${process.env.PUBLIC_URL}/pdf/PaulinaKuberska.pdf`} download>
           <button className="menu-button" aria-label="CV">
             <FontAwesomeIcon className="menu-icon" icon={faBars} size="lg" />
             <span className="menu-text">CV</span>

@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBars,
   faChevronDown,
-  faArrowRight,
 } from "@fortawesome/free-solid-svg-icons";
 import "./scss/General.scss";
 import "./scss/components/Projects.scss";
@@ -15,10 +14,6 @@ import QuizAppPhoto from "./assets/QuizAppPhoto.jpg";
 import photo from "./assets/photo.jpg";
 
 function App() {
-  function funcTEst(): void {
-    throw new Error("Function not implemented.");
-  }
-
   return (
     <div className="background">
       <div className="header">
@@ -102,7 +97,7 @@ function App() {
             </div>
 
             <div className="project-card">
-              <a href="">
+              <a href="img">
                 <button className="project-card">
                   <div className="image-container">
                     <img className="" alt="" />
@@ -148,7 +143,7 @@ function App() {
               my projects will inspire you! 💻✨
             </p>
           </div>
-          <img className="photo-cv" src={photo} alt="photo" />
+          <img className="photo-cv" src={photo} alt="face picture" />
         </div>
       </Section>
     </div>

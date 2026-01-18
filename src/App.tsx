@@ -97,7 +97,7 @@ function App() {
             </div>
 
             <div className="project-card">
-              <a href="img">
+              <a>
                 <button className="project-card">
                   <div className="image-container">
                     <img className="" alt="" />

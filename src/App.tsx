@@ -1,10 +1,7 @@
 import Section from "./components/Section";
 import avatar from "../src/assets/AvatarMaker.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faBars,
-  faChevronDown,
-} from "@fortawesome/free-solid-svg-icons";
+import { faBars, faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import "./scss/General.scss";
 import "./scss/components/Projects.scss";
 import ScrollToSection from "./components/ScrollSection";
@@ -97,7 +94,7 @@ function App() {
             </div>
 
             <div className="project-card">
-              <a>
+              <a href="https://google.com">
                 <button className="project-card">
                   <div className="image-container">
                     <img className="" alt="" />

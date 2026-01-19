@@ -12,13 +12,6 @@
     opacity: 0.1;
     transition: opacity 0.4s ease;
 
-    // mask-image: radial-gradient(
-    //   ellipse at center,
-    //   $text-pink 50%,
-    //   transparent 100%
-    // );
-    // mask-size: 100% 100%;
-    // mask-repeat: no-repeat;
   }
 
   .project-name {
@@ -46,7 +39,7 @@
   }
   .project-info {
     position: absolute;
-    bottom: 100%; // nad projektem
+    bottom: 100%;
     left: 50%;
     transform: translateX(-50%) translateY(-10px);
     color: $text-pink;
@@ -67,7 +60,7 @@
   }
   .project-info2 {
     position: absolute;
-    top: 110%; // pod projektem
+    top: 110%; 
     left: 50%;
     transform: translateX(-50%) translateY(-10px);
     color: $text-pink;

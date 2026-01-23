@@ -1,10 +1,10 @@
 # ✨ Portfolio – React + TypeScript
 
 Minimalist - about me page, where I can show you what I am currently working on.
-To create this I was using React, Typescript and css.
+To create this, I was using React, Typescript and css.
 ---
 
-- There's hellp section
+- There's hello section
 - Cv
 - some of my apps
 - about me
